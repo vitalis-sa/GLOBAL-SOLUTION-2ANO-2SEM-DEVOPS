@@ -1,0 +1,7 @@
+# CRLF quebra o bash do agente Linux do Azure Pipelines e o Git Bash:
+# scripts, YAML e o wrapper do Maven ficam sempre com LF.
+/mvnw text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.cmd text eol=crlf
+*.png binary
