@@ -1,0 +1,23 @@
+-- =====================================================================
+-- script-bd.sql - DDL dos objetos do banco da API (Azure SQL, T-SQL)
+--
+-- Banco: db-gs no servidor sql-rm566234-gs.database.windows.net
+-- Executado por scripts/03-aplicar-ddl.sh (sqlcmd -b), logo depois de
+-- scripts/02-criar-banco.sh criar o servidor e o banco.
+--
+-- A aplicação não cria nem altera tabelas: o Hibernate só confere se as
+-- entidades batem com este schema (spring.jpa.hibernate.ddl-auto=validate).
+--
+-- O script apaga e recria as tabelas. Rodar de novo devolve o banco ao
+-- estado inicial e APAGA OS DADOS. Ordem:
+--   1. DROP TABLE IF EXISTS das tabelas filhas antes das tabelas mães;
+--   2. CREATE TABLE das tabelas mães antes das filhas, com PK, FK,
+--      NOT NULL, UNIQUE e CHECK declarados aqui.
+--
+-- Conversão de tipos do Oracle (banco do Java Advanced) para o SQL Server:
+--   NUMBER(19) -> BIGINT · NUMBER(1) -> BIT · VARCHAR2(n) -> NVARCHAR(n)
+--   CLOB -> NVARCHAR(MAX) · DATE/TIMESTAMP -> DATETIME2
+-- =====================================================================
+
+-- ⏳ PENDENTE (src): DDL gerado a partir das entidades JPA do snapshot Java,
+-- na triagem descrita na Tarefa 4 do plano de execução.
