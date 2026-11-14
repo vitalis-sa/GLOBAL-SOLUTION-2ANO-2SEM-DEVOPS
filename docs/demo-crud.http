@@ -1,0 +1,88 @@
+# =====================================================================
+# Roteiro do CRUD do vídeo, contra a API publicada no Azure Web App.
+# Abra no VS Code com a extensão "REST Client" (ou copie para o Postman).
+# Depois de CADA operação, rode o SELECT correspondente em
+# docs/consultas-video.sql no Azure SQL: a persistência é provada pelo
+# SELECT no banco, e não pelo GET.
+#
+# As duas tabelas da demonstração não dependem uma da outra nem de
+# serviço externo (IA, MongoDB ou fila). Todos os dados são sintéticos.
+# =====================================================================
+
+@host = https://rm566234-gs-api.azurewebsites.net
+
+### 0. Autenticação: cria o usuário operador da demo e devolve o token JWT
+# ⏳ PENDENTE (src): rota, corpo e nome do campo do token no snapshot Java.
+# @name operador
+POST {{host}}/api/auth/registrar
+Content-Type: application/json
+
+{
+  "nome": "Operadora da Demo",
+  "email": "operadora.demo@exemplo.com",
+  "senha": "demo123456"
+}
+
+@token = {{operador.response.body.token}}
+
+#######################################################################
+# CRUD 1 - TABELA 1 (⏳ PENDENTE (src): recurso e corpo)
+#######################################################################
+
+### 1.1 INSERIR
+# @name registro1
+POST {{host}}/api/recurso-1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+}
+
+@id1 = {{registro1.response.body.id}}
+
+### 1.2 CONSULTAR
+GET {{host}}/api/recurso-1/{{id1}}
+Authorization: Bearer {{token}}
+
+### 1.3 ATUALIZAR
+PUT {{host}}/api/recurso-1/{{id1}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+}
+
+### 1.4 DELETAR
+DELETE {{host}}/api/recurso-1/{{id1}}
+Authorization: Bearer {{token}}
+
+#######################################################################
+# CRUD 2 - TABELA 2 (⏳ PENDENTE (src): recurso e corpo)
+#######################################################################
+
+### 2.1 INSERIR
+# @name registro2
+POST {{host}}/api/recurso-2
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+}
+
+@id2 = {{registro2.response.body.id}}
+
+### 2.2 CONSULTAR
+GET {{host}}/api/recurso-2/{{id2}}
+Authorization: Bearer {{token}}
+
+### 2.3 ATUALIZAR
+PUT {{host}}/api/recurso-2/{{id2}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+}
+
+### 2.4 DELETAR
+DELETE {{host}}/api/recurso-2/{{id2}}
+Authorization: Bearer {{token}}
