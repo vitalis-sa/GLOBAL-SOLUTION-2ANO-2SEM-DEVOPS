@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040" font-family="Segoe UI, Arial, sans-serif">
+<defs><filter id="sombra" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/></filter><marker id="seta-0078D4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0078D4"/></marker><marker id="seta-D9730D" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D9730D"/></marker><marker id="seta-C74634" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C74634"/></marker><marker id="seta-2E7D32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker><marker id="seta-B8860B" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8860B"/></marker><marker id="seta-6B6B6B" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B6B6B"/></marker></defs>
+<rect width="1800" height="1040" fill="#FFFFFF"/>
+<text x="20" y="38" font-size="26" font-weight="bold" fill="#1F1F1F" text-anchor="start">Vitalis · Arquitetura macro e fluxo CI/CD</text>
+<text x="20" y="64" font-size="14" font-weight="normal" fill="#555555" text-anchor="start">Global Solution 2026/2 · DevOps Tools &amp; Cloud Computing · API Java publicada no Azure Web App, com Azure SQL e infraestrutura criados por scripts Azure CLI</text>
+<rect x="20" y="90" width="220" height="560" rx="14" fill="#F7F7F7" stroke="#6B6B6B" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="34" y="114" font-size="15" font-weight="bold" fill="#6B6B6B" text-anchor="start">Desenvolvimento</text>
+<rect x="260" y="90" width="540" height="560" rx="14" fill="#F2F8FD" stroke="#0078D4" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="274" y="114" font-size="15" font-weight="bold" fill="#0078D4" text-anchor="start">Azure DevOps · GS 2026-2 - DevOps</text>
+<text x="540" y="114" font-size="12.5" font-weight="normal" fill="#0078D4" text-anchor="start">(privado · Git · Scrum)</text>
+<rect x="820" y="90" width="210" height="160" rx="14" fill="#F7F7F7" stroke="#6B6B6B" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="834" y="114" font-size="15" font-weight="bold" fill="#6B6B6B" text-anchor="start">GitHub (público)</text>
+<rect x="1050" y="90" width="510" height="560" rx="14" fill="#FFF8F1" stroke="#D9730D" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1064" y="114" font-size="15" font-weight="bold" fill="#D9730D" text-anchor="start">Microsoft Azure · rg-rm566234-gs</text>
+<text x="1064" y="132" font-size="12.5" font-weight="normal" fill="#D9730D" text-anchor="start">assinatura Azure for Students · região brazilsouth</text>
+<rect x="1580" y="90" width="200" height="560" rx="14" fill="#F3FAF3" stroke="#2E7D32" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1594" y="114" font-size="15" font-weight="bold" fill="#2E7D32" text-anchor="start">Usuários</text>
+<rect x="36" y="150" width="188" height="96" rx="10" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="2" filter="url(#sombra)"/>
+<rect x="36" y="150" width="6" height="96" rx="3" fill="#6B6B6B"/>
+<text x="52" y="174" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Desenvolvedor</text>
+<text x="52" y="195" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">integrante do grupo</text>
+<text x="52" y="213" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">IDE · Java · Maven · Git</text>
+<rect x="36" y="400" width="188" height="170" rx="10" fill="#FFFFFF" stroke="#D9730D" stroke-width="2" filter="url(#sombra)"/>
+<rect x="36" y="400" width="6" height="170" rx="3" fill="#D9730D"/>
+<text x="52" y="424" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Scripts Azure CLI</text>
+<text x="52" y="445" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">scripts/ no repositório:</text>
+<text x="52" y="463" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">01-criar-app.sh</text>
+<text x="52" y="481" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">02-criar-banco.sh</text>
+<text x="52" y="499" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">03-aplicar-ddl.sh</text>
+<text x="52" y="517" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">  (script-bd.sql)</text>
+<text x="52" y="535" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">04-status · 99-limpar</text>
+<rect x="276" y="150" width="234" height="96" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" filter="url(#sombra)"/>
+<rect x="276" y="150" width="6" height="96" rx="3" fill="#0078D4"/>
+<text x="292" y="174" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Azure Boards</text>
+<text x="292" y="195" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Task (work item) com os</text>
+<text x="292" y="213" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">vínculos de branch, commits e PR</text>
+<rect x="540" y="150" width="244" height="110" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" filter="url(#sombra)"/>
+<rect x="540" y="150" width="6" height="110" rx="3" fill="#0078D4"/>
+<text x="556" y="174" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Azure Repos · gs-devops</text>
+<text x="556" y="195" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">main protegida: revisor obrigatório,</text>
+<text x="556" y="213" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">work item vinculado e revisor</text>
+<text x="556" y="231" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">padrão (RM566234) · PR + merge</text>
+<rect x="276" y="310" width="234" height="128" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" filter="url(#sombra)"/>
+<rect x="276" y="310" width="6" height="128" rx="3" fill="#0078D4"/>
+<text x="292" y="334" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Pipeline de CI</text>
+<text x="292" y="355" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">azure-pipeline.yml</text>
+<text x="292" y="373" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">trigger: main · ubuntu-latest</text>
+<text x="292" y="391" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Maven@4: compila e testa</text>
+<text x="292" y="409" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">testes JUnit na aba Tests</text>
+<rect x="540" y="318" width="244" height="80" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" filter="url(#sombra)"/>
+<rect x="540" y="318" width="6" height="80" rx="3" fill="#0078D4"/>
+<text x="556" y="342" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Artefato gs-jar</text>
+<text x="556" y="363" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">.jar executável</text>
+<text x="556" y="381" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">PublishPipelineArtifact@1</text>
+<rect x="276" y="486" width="234" height="112" rx="10" fill="#FFFFFF" stroke="#B8860B" stroke-width="2" filter="url(#sombra)"/>
+<rect x="276" y="486" width="6" height="112" rx="3" fill="#B8860B"/>
+<text x="292" y="510" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Library · gs-segredos</text>
+<text x="292" y="531" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">DB_URL</text>
+<text x="292" y="549" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">DB_USER · DB_PASSWORD (secretas)</text>
+<text x="292" y="567" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">JWT_SECRET (secreta)</text>
+<rect x="540" y="480" width="244" height="124" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" filter="url(#sombra)"/>
+<rect x="540" y="480" width="6" height="124" rx="3" fill="#0078D4"/>
+<text x="556" y="504" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Release clássica gs-cd</text>
+<text x="556" y="525" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">gatilho de implantação contínua</text>
+<text x="556" y="543" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">AzureWebApp@1: deploy do .jar</text>
+<text x="556" y="561" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">e app settings (segredos)</text>
+<text x="556" y="579" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">smoke test: /v3/api-docs</text>
+<rect x="836" y="140" width="182" height="96" rx="10" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="2" stroke-dasharray="6 4" filter="url(#sombra)"/>
+<rect x="836" y="140" width="6" height="96" rx="3" fill="#6B6B6B"/>
+<text x="852" y="164" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Espelho da main</text>
+<text x="852" y="185" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">vitalis-sa/GLOBAL-</text>
+<text x="852" y="203" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">SOLUTION-2ANO-2SEM-</text>
+<text x="852" y="221" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">DEVOPS</text>
+<rect x="836" y="330" width="182" height="96" rx="10" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="2" filter="url(#sombra)"/>
+<rect x="836" y="330" width="6" height="96" rx="3" fill="#6B6B6B"/>
+<text x="852" y="354" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Professor</text>
+<text x="852" y="375" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Basic na organização e</text>
+<text x="852" y="393" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Project Administrators</text>
+<text x="852" y="411" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">no projeto</text>
+<rect x="1066" y="150" width="478" height="178" rx="12" fill="none" stroke="#E0A060" stroke-width="1.5"/>
+<text x="1080" y="172" font-size="13" font-weight="bold" fill="#D9730D" text-anchor="start">App Service Plan plan-rm566234-gs · Linux B1</text>
+<rect x="1082" y="184" width="446" height="128" rx="10" fill="#FFFFFF" stroke="#D9730D" stroke-width="2" filter="url(#sombra)"/>
+<rect x="1082" y="184" width="6" height="128" rx="3" fill="#D9730D"/>
+<text x="1098" y="208" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Web App rm566234-gs-api</text>
+<text x="1098" y="229" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Java 21 SE · Always On · só HTTPS · FTP desligado</text>
+<text x="1098" y="247" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">API Spring Boot: JWT, Spring Data JPA e Swagger UI</text>
+<text x="1098" y="265" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">integrações (IA, MongoDB, fila) desligadas</text>
+<text x="1098" y="283" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">ddl-auto=validate (schema vem do script-bd.sql)</text>
+<rect x="1066" y="380" width="478" height="210" rx="12" fill="none" stroke="#E0A060" stroke-width="1.5"/>
+<text x="1080" y="402" font-size="13" font-weight="bold" fill="#D9730D" text-anchor="start">SQL Server sql-rm566234-gs (PaaS)</text>
+<text x="1080" y="420" font-size="12" font-weight="normal" fill="#8A5A20" text-anchor="start">firewall: serviços do Azure + IP do operador</text>
+<rect x="1082" y="434" width="446" height="140" rx="10" fill="#FFFFFF" stroke="#C74634" stroke-width="2" filter="url(#sombra)"/>
+<rect x="1082" y="434" width="6" height="140" rx="3" fill="#C74634"/>
+<text x="1098" y="458" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Banco db-gs · Azure SQL Basic</text>
+<text x="1098" y="479" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">tabelas, PK, FK e restrições criadas por</text>
+<text x="1098" y="497" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">scripts/script-bd.sql</text>
+<text x="1098" y="515" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">CRUD de duas tabelas comprovado com SELECT</text>
+<text x="1098" y="533" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">no Query editor do Portal</text>
+<rect x="1594" y="184" width="172" height="112" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2" filter="url(#sombra)"/>
+<rect x="1594" y="184" width="6" height="112" rx="3" fill="#2E7D32"/>
+<text x="1610" y="208" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Usuário final</text>
+<text x="1610" y="229" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">navegador ou</text>
+<text x="1610" y="247" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">REST Client:</text>
+<text x="1610" y="265" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Swagger e CRUD</text>
+<rect x="1594" y="450" width="172" height="112" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2" filter="url(#sombra)"/>
+<rect x="1594" y="450" width="6" height="112" rx="3" fill="#2E7D32"/>
+<text x="1610" y="474" font-size="14.5" font-weight="bold" fill="#1F1F1F" text-anchor="start">Operador</text>
+<text x="1610" y="495" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">Query editor</text>
+<text x="1610" y="513" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">do Portal Azure:</text>
+<text x="1610" y="531" font-size="12.5" font-weight="normal" fill="#3A3A3A" text-anchor="start">SELECT de evidência</text>
+<path d="M224,198 L274,198" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="230" cy="178" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="230" y="182.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="248" y="182.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"></text>
+<path d="M510,198 L538,198" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="512" cy="226" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="512" y="230.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="530" y="230.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"></text>
+<path d="M130,150 L130,142 L662,142 L662,148" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="300" cy="142" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="300" y="146.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="318" y="146.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">commit (#id da Task) e push da branch</text>
+<path d="M600,260 L600,284 L393,284 L393,308" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="410" cy="284" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="410" y="288.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="428" y="288.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">PR aprovado e merge na main</text>
+<path d="M510,358 L538,358" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="512" cy="382" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="512" y="386.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="530" y="386.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"></text>
+<path d="M662,398 L662,478" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="662" cy="438" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="662" y="442.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="680" y="442.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">novo artefato</text>
+<path d="M510,542 L538,542" fill="none" stroke="#B8860B" stroke-width="2.6" stroke-dasharray="7 5" marker-end="url(#seta-B8860B)"/>
+<path d="M784,520 L1040,520 L1040,290 L1080,290" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<circle cx="800" cy="520" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="800" y="524.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="818" y="524.5" font-size="12.5" font-weight="bold" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">deploy + app settings</text>
+<text x="818" y="545" font-size="12" font-weight="normal" fill="#0078D4" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">(service connection azure-gs)</text>
+<path d="M784,200 L834,184" fill="none" stroke="#6B6B6B" stroke-width="2.6" stroke-dasharray="2 5" marker-end="url(#seta-6B6B6B)"/>
+<path d="M1420,312 L1420,432" fill="none" stroke="#C74634" stroke-width="2.6" marker-end="url(#seta-C74634)"/>
+<circle cx="1420" cy="350" r="12" fill="#C74634" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1420" y="354.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8</text>
+<text x="1438" y="354.5" font-size="12.5" font-weight="bold" fill="#C74634" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">JDBC com TLS</text>
+<path d="M1594,240 L1530,240" fill="none" stroke="#2E7D32" stroke-width="2.6" marker-end="url(#seta-2E7D32)"/>
+<circle cx="1555" cy="268" r="12" fill="#2E7D32" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1555" y="272.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">9</text>
+<text x="1573" y="272.5" font-size="12.5" font-weight="bold" fill="#2E7D32" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"></text>
+<path d="M1594,506 L1530,506" fill="none" stroke="#2E7D32" stroke-width="2.6" marker-end="url(#seta-2E7D32)"/>
+<circle cx="1555" cy="534" r="12" fill="#2E7D32" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1555" y="538.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="1573" y="538.5" font-size="12.5" font-weight="bold" fill="#2E7D32" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"></text>
+<path d="M224,520 L246,520 L246,630 L1048,630" fill="none" stroke="#D9730D" stroke-width="2.6" stroke-dasharray="7 5" marker-end="url(#seta-D9730D)"/>
+<circle cx="300" cy="630" r="12" fill="#D9730D" stroke="#FFFFFF" stroke-width="2"/>
+<text x="300" y="634.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">0</text>
+<text x="318" y="634.5" font-size="12.5" font-weight="bold" fill="#D9730D" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">criam a infraestrutura na Azure e aplicam o script-bd.sql</text>
+<path d="M836,378 L804,378" fill="none" stroke="#6B6B6B" stroke-width="2.6" stroke-dasharray="2 5" marker-end="url(#seta-6B6B6B)"/>
+<rect x="20" y="672" width="1760" height="350" rx="14" fill="#FAFAFA" stroke="#D0D0D0"/>
+<text x="40" y="702" font-size="15" font-weight="bold" fill="#1F1F1F" text-anchor="start">Legenda</text>
+<path d="M40,728 L100,728" fill="none" stroke="#0078D4" stroke-width="2.6" marker-end="url(#seta-0078D4)"/>
+<text x="112" y="732.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">esteira CI/CD (passos 1 a 7)</text>
+<path d="M40,756 L100,756" fill="none" stroke="#D9730D" stroke-width="2.6" stroke-dasharray="7 5" marker-end="url(#seta-D9730D)"/>
+<text x="112" y="760.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">provisionamento por Azure CLI (passo 0)</text>
+<path d="M40,784 L100,784" fill="none" stroke="#C74634" stroke-width="2.6" marker-end="url(#seta-C74634)"/>
+<text x="112" y="788.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">acesso da API ao banco (passo 8)</text>
+<path d="M40,812 L100,812" fill="none" stroke="#2E7D32" stroke-width="2.6" marker-end="url(#seta-2E7D32)"/>
+<text x="112" y="816.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">acesso dos usuários (passos 9 e 10)</text>
+<path d="M40,840 L100,840" fill="none" stroke="#B8860B" stroke-width="2.6" stroke-dasharray="7 5" marker-end="url(#seta-B8860B)"/>
+<text x="112" y="844.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">variáveis protegidas (cadeado)</text>
+<path d="M40,868 L100,868" fill="none" stroke="#6B6B6B" stroke-width="2.6" stroke-dasharray="2 5" marker-end="url(#seta-6B6B6B)"/>
+<text x="112" y="872.5" font-size="13" font-weight="normal" fill="#1F1F1F" text-anchor="start">espelho e acompanhamento</text>
+<text x="420" y="702" font-size="15" font-weight="bold" fill="#1F1F1F" text-anchor="start">Fluxo numerado</text>
+<circle cx="436" cy="726" r="12" fill="#D9730D" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="730.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">0</text>
+<text x="456" y="730.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">Os scripts Azure CLI criam o Resource Group, o plano B1, o Web App, o SQL Server, o banco e o firewall, e aplicam o script-bd.sql.</text>
+<circle cx="436" cy="752" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="756.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="456" y="756.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O desenvolvedor cria a Task no Azure Boards.</text>
+<circle cx="436" cy="778" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="782.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="456" y="782.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">A branch é criada a partir da Task, no Azure Repos, e fica vinculada a ela.</text>
+<circle cx="436" cy="804" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="808.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="456" y="808.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O desenvolvedor faz o commit (com #id da Task) e o push da branch.</text>
+<circle cx="436" cy="830" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="834.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="456" y="834.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O PR passa pelas políticas da main (revisor obrigatório, work item e revisor padrão) e o merge dispara o CI.</text>
+<circle cx="436" cy="856" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="860.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="456" y="860.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O Maven compila e roda os testes (aba Tests) e o .jar é publicado como artefato gs-jar.</text>
+<circle cx="436" cy="882" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="886.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="456" y="886.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O novo artefato dispara a Release clássica gs-cd (gatilho de implantação contínua).</text>
+<circle cx="436" cy="908" r="12" fill="#0078D4" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="912.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="456" y="912.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">A Release lê o variable group gs-segredos, publica o .jar no Web App com as app settings e roda o smoke test.</text>
+<circle cx="436" cy="934" r="12" fill="#C74634" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="938.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8</text>
+<text x="456" y="938.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">A API conecta no Azure SQL por JDBC com TLS.</text>
+<circle cx="436" cy="960" r="12" fill="#2E7D32" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="964.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">9</text>
+<text x="456" y="964.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O usuário final acessa o Swagger e o CRUD por HTTPS.</text>
+<circle cx="436" cy="986" r="12" fill="#2E7D32" stroke="#FFFFFF" stroke-width="2"/>
+<text x="436" y="990.5" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="456" y="990.5" font-size="13.5" font-weight="normal" fill="#1F1F1F" text-anchor="start">O operador comprova a persistência de cada operação com SELECT no Query editor do Portal.</text>
+</svg>
