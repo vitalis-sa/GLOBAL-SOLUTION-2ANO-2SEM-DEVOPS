@@ -59,12 +59,20 @@ echo "[2/2] Aguardando o Oracle ficar pronto (até 10 minutos)..."
 for _ in $(seq 1 60); do
   if az container logs --name "${ACI_ORACLE}" --resource-group "${RESOURCE_GROUP}" 2>/dev/null \
        | grep -q "DATABASE IS READY TO USE"; then
+    PRONTO="sim"
     echo "      banco pronto."
-    az container logs --name "${ACI_ORACLE}" --resource-group "${RESOURCE_GROUP}" | grep "remembered:"
+    az container logs --name "${ACI_ORACLE}" --resource-group "${RESOURCE_GROUP}" | grep "remembered:" || true
     break
   fi
   sleep 10
 done
+
+if [[ "${PRONTO:-nao}" != "sim" ]]; then
+  echo "O Oracle não ficou pronto em 10 minutos. Veja o estado e os logs:"
+  echo "  az container show --name ${ACI_ORACLE} --resource-group ${RESOURCE_GROUP} --query containers[0].instanceView"
+  echo "  az container logs --name ${ACI_ORACLE} --resource-group ${RESOURCE_GROUP}"
+  exit 1
+fi
 
 echo
 echo "Pronto. Oracle em ${ORACLE_HOST}:${ORACLE_PORT}/${ORACLE_SERVICE} (usuário ${DB_USER})"
