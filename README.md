@@ -7,9 +7,7 @@ Este repositório é a entrega de **DevOps Tools & Cloud Computing** da **Global
 - cada merge na `main` dispara o **CI**, que compila, roda os testes automatizados e publica o artefato;
 - cada novo artefato dispara a **Release**, que faz o deploy automático no **Azure Web App**.
 
-A API publicada aqui é o **backend de produção do grupo**: o app Mobile e a API .NET da solução consomem este Web App, que fica no ar com todas as integrações ligadas (banco Oracle, fila RabbitMQ, IA generativa e push).
-
-> O código-fonte em [`src/`](src/) é um snapshot de [`vitalis-sa/gs-remembered-java`](https://github.com/vitalis-sa/gs-remembered-java), a API da disciplina Java Advanced, na versão `6303baf`. Cada versão nova do Java entra neste repositório por uma Task, uma branch e um pull request.
+A API publicada aqui é o **backend de produção do grupo**: o app Mobile e a API .NET da solução consomem este Web App, que fica no ar com todas as integrações ativas (banco Oracle, fila RabbitMQ, IA generativa e push).
 
 ---
 
@@ -448,4 +446,4 @@ Para usar o Swagger UI:
 
 ## 🤖 Declaração de uso de IA
 
-O grupo usou o Claude (Claude Code) como apoio para escrever os scripts Azure CLI, o Dockerfile do banco, o pipeline de CI, a definição da Release, o desenho da arquitetura e este README, a partir da entrega de DevOps da Sprint 4 do Challenge. Todo o conteúdo foi revisado pelo grupo, e cada integrante consegue explicar a esteira, os scripts e as decisões de arquitetura.
+O grupo usou o Claude (Claude Code) como apoio para escrever os scripts Azure CLI, o Dockerfile do banco, o pipeline de CI, a definição da Release, o desenho da arquitetura e este README. Todo o conteúdo foi revisado pelo grupo, e cada integrante consegue explicar a esteira, os scripts e as decisões de arquitetura.
