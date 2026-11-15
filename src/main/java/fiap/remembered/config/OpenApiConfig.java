@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @OpenAPIDefinition(security = @SecurityRequirement(name = OpenApiConfig.ESQUEMA_JWT), info = @Info(
-        title = "Remembered - API Java",
-        version = "v1",
+        title = "Remembered - API Java - TESTE DO VIDEO",
+        version = "v1.1",
         description = "Medicamentos, doses, avisos e relatorio de adesao do idoso. "
                 + "Autenticacao: Bearer JWT (idoso emitido por esta API; cuidador emitido pela API .NET)."))
 @SecurityScheme(name = OpenApiConfig.ESQUEMA_JWT, type = SecuritySchemeType.HTTP, scheme = "bearer", bearerFormat = "JWT")
