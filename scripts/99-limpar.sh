@@ -4,7 +4,8 @@
 #
 # Rode só DEPOIS da nota e das apresentações (até 27/11/2026): a API e o
 # banco precisam estar no ar durante a correção. A operação é IRREVERSÍVEL
-# e leva junto o App Service Plan, o Web App, o SQL Server e o banco.
+# e leva junto o App Service Plan, o Web App, o Container Registry com a
+# imagem do Oracle e o container do banco.
 # =====================================================================
 set -euo pipefail
 
