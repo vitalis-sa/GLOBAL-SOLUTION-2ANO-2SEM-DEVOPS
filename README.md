@@ -30,7 +30,7 @@ A API publicada aqui é o **backend de produção do grupo**: o app Mobile e a A
 | Projeto no Azure DevOps | https://dev.azure.com/RM565154/GS%202026-2%20-%20DevOps |
 | Azure Repos (origem do código) | https://dev.azure.com/RM565154/GS%202026-2%20-%20DevOps/_git/gs-devops |
 | Espelho público no GitHub | https://github.com/vitalis-sa/GLOBAL-SOLUTION-2ANO-2SEM-DEVOPS |
-| Vídeo no YouTube | ⏳ PENDENTE: link do vídeo |
+| Vídeo no YouTube | https://www.youtube.com/watch?v=Hj2gn8xg64M |
 | API publicada (Swagger UI) | https://rm566234-gs-api.azurewebsites.net/swagger-ui.html |
 
 ---
