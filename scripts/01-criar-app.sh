@@ -59,8 +59,9 @@ az webapp log config \
   --level information \
   -o none
 
-# Só valores não sensíveis. Os segredos (DB_URL, DB_USER, DB_PASSWORD e
-# JWT_SECRET) chegam pela Release, a partir do variable group protegido.
+# Só valores não sensíveis. Os segredos (DB_URL, DB_USER, DB_PASSWORD,
+# JWT_SECRET, GROQ_API_KEY e CLOUDAMQP_URL) chegam pela Release, a partir
+# do variable group protegido.
 echo "[5/5] Configurações não sensíveis da aplicação..."
 az webapp config appsettings set \
   --name "${WEBAPP}" \
@@ -71,4 +72,4 @@ az webapp config appsettings set \
 HOST=$(az webapp show --name "${WEBAPP}" --resource-group "${RESOURCE_GROUP}" --query defaultHostName -o tsv)
 echo
 echo "Pronto. Web App: https://${HOST}"
-echo "OpenAPI (depois do primeiro deploy): https://${HOST}${API_DOCS_PATH}"
+echo "Swagger (depois do primeiro deploy): https://${HOST}/swagger-ui.html"

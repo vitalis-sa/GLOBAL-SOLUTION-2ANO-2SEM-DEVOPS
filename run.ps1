@@ -1,12 +1,13 @@
-# Carrega o .env e sobe a API localmente, apontando para o Azure SQL.
+# Carrega o .env e sobe a API localmente, apontando para o Oracle da Azure (ACI).
 #
 #   cp .env.example .env      (uma vez só; preencha os valores)
 #   .\run.ps1
 #
 # O Spring Boot não lê arquivos .env sozinho: este script exporta cada
 # linha do .env como variável de ambiente do processo antes de chamar o
-# Maven. O IP da máquina precisa estar liberado no firewall do Azure SQL
-# (rode de novo scripts/02-criar-banco.sh para atualizar a regra "operador").
+# Maven. O banco da Azure é o mesmo da produção, então os jobs e os
+# consumidores de fila ficam desligados na sua máquina (JOBS_HABILITADOS e
+# RABBIT_CONSUMIDORES = false), a menos que o .env diga outra coisa.
 
 $ErrorActionPreference = "Stop"
 $envFile = Join-Path $PSScriptRoot ".env"
@@ -32,7 +33,14 @@ Get-Content $envFile | ForEach-Object {
     [System.Environment]::SetEnvironmentVariable($chave, $valor, "Process")
 }
 
-foreach ($obrigatoria in @("DB_URL", "DB_USER", "DB_PASSWORD", "JWT_SECRET")) {
+# Padrões seguros para o desenvolvimento local contra o banco compartilhado.
+foreach ($flag in @("JOBS_HABILITADOS", "RABBIT_CONSUMIDORES")) {
+    if (-not [System.Environment]::GetEnvironmentVariable($flag, "Process")) {
+        [System.Environment]::SetEnvironmentVariable($flag, "false", "Process")
+    }
+}
+
+foreach ($obrigatoria in @("DB_URL", "DB_USER", "DB_PASSWORD", "JWT_SECRET", "CLOUDAMQP_URL")) {
     if (-not [System.Environment]::GetEnvironmentVariable($obrigatoria, "Process")) {
         Write-Host "Faltando no .env: $obrigatoria" -ForegroundColor Red
         exit 1
