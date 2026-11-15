@@ -1,88 +1,115 @@
 # =====================================================================
 # Roteiro do CRUD do vídeo, contra a API publicada no Azure Web App.
-# Abra no VS Code com a extensão "REST Client" (ou copie para o Postman).
+# Abra no VS Code com a extensão "REST Client" (ou use o Swagger UI).
 # Depois de CADA operação, rode o SELECT correspondente em
-# docs/consultas-video.sql no Azure SQL: a persistência é provada pelo
-# SELECT no banco, e não pelo GET.
+# docs/consultas-video.sql no SQL Developer, conectado ao Oracle do ACI:
+# a persistência é provada pelo SELECT no banco, e não pelo GET.
 #
-# As duas tabelas da demonstração não dependem uma da outra nem de
-# serviço externo (IA, MongoDB ou fila). Todos os dados são sintéticos.
+# Tabelas: TB_MEDICAMENTO (com TB_HORARIO_MEDICAMENTO) e TB_USUARIO.
+# Todos os dados são fictícios (LGPD).
 # =====================================================================
 
-@host = https://rm566234-gs-api.azurewebsites.net
-
-### 0. Autenticação: cria o usuário operador da demo e devolve o token JWT
-# ⏳ PENDENTE (src): rota, corpo e nome do campo do token no snapshot Java.
-# @name operador
-POST {{host}}/api/auth/registrar
-Content-Type: application/json
-
-{
-  "nome": "Operadora da Demo",
-  "email": "operadora.demo@exemplo.com",
-  "senha": "demo123456"
-}
-
-@token = {{operador.response.body.token}}
+@host = https://rm566234-gs-api.azurewebsites.net/api/v1
 
 #######################################################################
-# CRUD 1 - TABELA 1 (⏳ PENDENTE (src): recurso e corpo)
+# CRUD 1 - TB_MEDICAMENTO, com o idoso de teste da migration V3
 #######################################################################
 
-### 1.1 INSERIR
-# @name registro1
-POST {{host}}/api/recurso-1
-Authorization: Bearer {{token}}
+### 1.0 Login do idoso de teste (devolve o token JWT e o id do idoso)
+# @name maria
+POST {{host}}/auth/login
 Content-Type: application/json
 
 {
+  "email": "maria.idosa@teste.dev",
+  "senha": "Remembered@2026"
 }
 
-@id1 = {{registro1.response.body.id}}
+@tokenMaria = {{maria.response.body.token}}
+@idMaria = {{maria.response.body.usuario.id}}
 
-### 1.2 CONSULTAR
-GET {{host}}/api/recurso-1/{{id1}}
-Authorization: Bearer {{token}}
-
-### 1.3 ATUALIZAR
-PUT {{host}}/api/recurso-1/{{id1}}
-Authorization: Bearer {{token}}
+### 1.1 INSERIR (201): o medicamento e os horários entram no banco
+# @name medicamento
+POST {{host}}/idosos/{{idMaria}}/medicamentos
+Authorization: Bearer {{tokenMaria}}
 Content-Type: application/json
 
 {
+  "nome": "Vitamina D",
+  "dosagem": "1000 UI",
+  "forma": "Cápsula",
+  "dataInicio": "2026-11-18",
+  "observacoes": "Tomar depois do café da manhã",
+  "horarios": [
+    { "hora": "09:00" }
+  ]
 }
 
-### 1.4 DELETAR
-DELETE {{host}}/api/recurso-1/{{id1}}
-Authorization: Bearer {{token}}
+@idMedicamento = {{medicamento.response.body.id}}
+
+### 1.2 CONSULTAR (200)
+GET {{host}}/medicamentos/{{idMedicamento}}
+Authorization: Bearer {{tokenMaria}}
+
+### 1.3 ATUALIZAR (200): dosagem e horário mudam
+PUT {{host}}/medicamentos/{{idMedicamento}}
+Authorization: Bearer {{tokenMaria}}
+Content-Type: application/json
+
+{
+  "nome": "Vitamina D",
+  "dosagem": "2000 UI",
+  "forma": "Cápsula",
+  "dataInicio": "2026-11-18",
+  "observacoes": "Tomar depois do almoço",
+  "horarios": [
+    { "hora": "13:00" }
+  ]
+}
+
+### 1.4 DELETAR (204): o medicamento sai, e os horários e as doses saem em cascata
+DELETE {{host}}/medicamentos/{{idMedicamento}}
+Authorization: Bearer {{tokenMaria}}
 
 #######################################################################
-# CRUD 2 - TABELA 2 (⏳ PENDENTE (src): recurso e corpo)
+# CRUD 2 - TB_USUARIO, com uma conta nova criada no vídeo
 #######################################################################
 
-### 2.1 INSERIR
-# @name registro2
-POST {{host}}/api/recurso-2
-Authorization: Bearer {{token}}
+### 2.1 INSERIR (201): cadastro de um idoso novo
+POST {{host}}/auth/cadastro
 Content-Type: application/json
 
 {
+  "nome": "Antônio Pereira",
+  "email": "antonio.demo@teste.dev",
+  "senha": "Demo@2026"
 }
 
-@id2 = {{registro2.response.body.id}}
-
-### 2.2 CONSULTAR
-GET {{host}}/api/recurso-2/{{id2}}
-Authorization: Bearer {{token}}
-
-### 2.3 ATUALIZAR
-PUT {{host}}/api/recurso-2/{{id2}}
-Authorization: Bearer {{token}}
+### 2.2 CONSULTAR (200): login e perfil da conta nova
+# @name antonio
+POST {{host}}/auth/login
 Content-Type: application/json
 
 {
+  "email": "antonio.demo@teste.dev",
+  "senha": "Demo@2026"
 }
 
-### 2.4 DELETAR
-DELETE {{host}}/api/recurso-2/{{id2}}
-Authorization: Bearer {{token}}
+@tokenAntonio = {{antonio.response.body.token}}
+
+###
+GET {{host}}/me
+Authorization: Bearer {{tokenAntonio}}
+
+### 2.3 ATUALIZAR (200): troca do nome
+PUT {{host}}/me
+Authorization: Bearer {{tokenAntonio}}
+Content-Type: application/json
+
+{
+  "nome": "Antônio Carlos Pereira"
+}
+
+### 2.4 DELETAR (204): exclusão da conta e dos dados do idoso (LGPD)
+DELETE {{host}}/me
+Authorization: Bearer {{tokenAntonio}}
